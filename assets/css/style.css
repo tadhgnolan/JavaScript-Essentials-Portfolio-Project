@@ -38,3 +38,16 @@ body {
     color: white;
     outline: none;
 }
+
+.btn-hover {
+    border-color: black;
+}
+
+#tile {
+    width: auto;
+}
+
+#tile-img {
+    width: auto;
+    max-width: 100%;
+}
