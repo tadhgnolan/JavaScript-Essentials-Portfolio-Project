@@ -152,6 +152,25 @@ const textNodes = [{
             }
         ]
     },
+    {
+        id: 8,
+        image: 'assets/images/red_door.jpeg',
+        text: 'The android is not interested in compromise & pummels you into unconsciousness',
+        options: [{
+            text: 'Restart',
+            nextText: -1
+        }]
+    },
+    {
+        id: 9,
+        image: 'assets/images/red_door.jpeg',
+        text: 'As the smoke clears you realise the rocket had no effect on the android',
+        options: [{
+            text: 'Restart'
+            nextText: -1
+        }]
+    },
+
 
 ]
 
