@@ -166,10 +166,20 @@ const textNodes = [{
         image: 'assets/images/red_door.jpeg',
         text: 'As the smoke clears you realise the rocket had no effect on the android',
         options: [{
-            text: 'Restart'
+            text: 'Restart',
             nextText: -1
         }]
     },
+    {
+        id: 10,
+        image: 'assets/images/red_door.jpeg',
+        text: 'The androids fists pass effortlessly through your body shield & knock you unconscious',
+        options: [{
+            text: 'Restart',
+            nextText: -1
+        }]
+    },
+    {}
 
 
 ]
