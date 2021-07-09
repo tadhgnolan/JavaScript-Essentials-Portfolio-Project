@@ -11,7 +11,7 @@ function startGame() {
 function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
     textElement.innerText = textNode.text
-    document.getElementById("tile-img").src = textNodes.image
+    document.getElementById("tile-img").src = textNode.image
     while (optionButtonsElement.firstChild) {
         optionButtonsElement.removeChild(optionButtonsElement.firstChild)
     }
@@ -42,7 +42,7 @@ function selectOption(option) {
 
 const textNodes = [{
     id: 1,
-    image: "assets/images/machine.jpeg",
+    image: 'assets/images/machine.jpeg',
     text: 'You wake up in a strange room seated & strapped into a large machine. You remove a cable from your right arm and stand up unsteadily. You notice a stun pistol on a table to your left.',
     options: [{
             text: 'Take the stun pistol',
