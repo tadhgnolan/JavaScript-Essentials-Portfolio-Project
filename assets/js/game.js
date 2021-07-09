@@ -118,6 +118,15 @@ const textNodes = [{
             nextText: -1
         }]
     },
+    {
+        id: 6,
+        image: 'assets/images/minimal_kitchen.jpg',
+        text: 'You enter the Galley & make your way to the cabinets. You find a box marked rations & consume one of the high nutrient bars inside. Strangely, you feel immediately rejuvinated. There must have been an extra ingredient in that bar. You decide to return to the red door & see what lies behind it',
+        option: [{
+            text: 'Open the red door',
+            nextText: 7
+        }]
+    },
 
 ]
 
