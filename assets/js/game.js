@@ -60,7 +60,7 @@ const textNodes = [{
     {
         id: 2,
         image: 'assets/images/sci_fi_corridor_curving_left.jpeg',
-        text: 'You exit the room containing the machine & enter a long corridor which curves to the left. At the end of the corridor you find a matter exchange terminal.',
+        text: 'You exit the room containing the machine & enter a long corridor which curves to the left. In the middle of the corridor you find a matter exchange terminal.',
         options: [{
             text: 'Exchange pistol for a rocket launcher',
             requiredState: (currentState) => currentState.stunPistol,
@@ -82,6 +82,33 @@ const textNodes = [{
             nextText: 3
         }, ]
     },
+    {
+        id: 3,
+        image: 'assets/images/sci_fi_staircase.jpg',
+        text: 'You exit the hallway & climb a large staircase. At the top are 3 doors. One a plain red door, one a large door marked "Exit" & the last is  marked ""',
+        options: [{
+                text: 'Open the red door',
+                nextText: 4
+            },
+            {
+                text: 'Open the exit',
+                nextText: 5
+            },
+            {
+                text: 'Enter the galley/dining area',
+                nextText: 6
+            }
+        ]
+    },
+    {
+        id: 4,
+        image: 'assets/images/red_door.jpeg',
+        text: 'You open the red door & are attacked by a rogue android. You are too weak to put up any kind of defense as it rains blows upon your head & you lose consciousness',
+        options: [{
+            text: 'Restart',
+            nextText: -1
+        }]
+    }, //
 
 ]
 
