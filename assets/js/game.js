@@ -108,7 +108,16 @@ const textNodes = [{
             text: 'Restart',
             nextText: -1
         }]
-    }, //
+    },
+    {
+        id: 5,
+        image: 'assets/images/space.jpeg',
+        text: 'You press the button to open the door marked "Exit" & are sucked out through a malfunctioning airlock into the vacuum of space',
+        options: [{
+            text: 'Restart',
+            nextText: -1
+        }]
+    },
 
 ]
 
