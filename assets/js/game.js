@@ -61,7 +61,7 @@ const textNodes = [{
         id: 2,
         image: 'assets/images/sci_fi_corridor_curving_left.jpeg',
         text: 'You exit the room containing the machine & enter a long corridor which curves to the left. At the end of the corridor you find a matter exchange terminal.',
-        options[{
+        options: [{
             text: 'Exchange pistol for a rocket launcher',
             requiredState: (currentState) => currentState.stunPistol,
             setState: {
@@ -80,7 +80,7 @@ const textNodes = [{
         }, {
             text: 'Ignore the terminal',
             nextText: 3
-        }]
+        }, ]
     },
 
 ]
