@@ -16,7 +16,7 @@ function showTextNode(textNodeIndex) {
         optionButtonsElement.removeChild(optionButtonsElement.firstChild)
     }
 
-    textNode.options.array.forEach(option => {
+    textNode.options.forEach(option => {
         if (showOption(option)) {
             const button = document.createElement('button')
             button.innerText = option.text
@@ -28,7 +28,7 @@ function showTextNode(textNodeIndex) {
 }
 
 function showOption(option) {
-    return Option.requiredState == null || option.requiredState(state)
+    return option.requiredState == null || option.requiredState(state)
 }
 
 function selectOption(option) {
