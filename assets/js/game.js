@@ -39,3 +39,24 @@ function selectOption(option) {
     state = Object.assign(state, option.setState)
     showTextNode(nextTextNodeId)
 }
+
+const textNodes = [{
+    id: 1,
+    image: "assets/images/machine.jpeg",
+    text: 'You wake up in a strange room seated & strapped into a large machine. You remove a cable from your right arm and stand up unsteadily. You notice a stun pistol on a table to your left.',
+    options: [{
+            text: 'Take the stun pistol',
+            setState: {
+                stunPistol: true
+            },
+            nextText: 2
+        },
+        {
+            text: 'Leave the stun pistol',
+            nextText: 2
+        }
+    ]
+},
+}]
+
+startGame()
