@@ -41,21 +41,48 @@ function selectOption(option) {
 }
 
 const textNodes = [{
-    id: 1,
-    image: 'assets/images/machine.jpeg',
-    text: 'You wake up in a strange room seated & strapped into a large machine. You remove a cable from your right arm and stand up unsteadily. You notice a stun pistol on a table to your left.',
-    options: [{
-            text: 'Take the stun pistol',
-            setState: {
-                stunPistol: true
+        id: 1,
+        image: 'assets/images/machine.jpeg',
+        text: 'You wake up in a strange room seated & strapped into a large machine. You remove a cable from your right arm and stand up unsteadily. You notice a stun pistol on a table to your left.',
+        options: [{
+                text: 'Take the stun pistol',
+                setState: {
+                    stunPistol: true
+                },
+                nextText: 2
             },
-            nextText: 2
-        },
-        {
-            text: 'Leave the stun pistol',
-            nextText: 2
-        }
-    ]
-}, ]
+            {
+                text: 'Leave the stun pistol',
+                nextText: 2
+            }
+        ]
+    },
+    {
+        id: 2,
+        image: 'assets/images/sci_fi_corridor_curving_left.jpeg',
+        text: 'You exit the room containing the machine & enter a long corridor which curves to the left. At the end of the corridor you find a matter exchange terminal.',
+        options[{
+            text: 'Exchange pistol for a rocket launcher',
+            requiredState: (currentState) => currentState.stunPistol,
+            setState: {
+                stunPistol: false,
+                rocketLauncher: true
+            },
+            nextText: 3,
+        }, {
+            text: 'Exchange pistol for a body shield',
+            requiredState: (currentState) => currentState.stunPistol,
+            setState: {
+                stunPistol: false,
+                bodyShield: true,
+            },
+            nextText: 3
+        }, {
+            text: 'Ignore the terminal',
+            nextText: 3
+        }]
+    },
+
+]
 
 startGame()
