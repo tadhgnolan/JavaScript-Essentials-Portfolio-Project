@@ -127,6 +127,31 @@ const textNodes = [{
             nextText: 7
         }]
     },
+    {
+        id: 7,
+        image: 'assets/images/android.png',
+        text: 'You open the red door & dodge as a rogue android swings for your head.',
+        options: [{
+                text: 'Try to reason with it'
+                nextText: 8
+            },
+            {
+                text: 'Attack it with your rocket launcher'
+                requiredState: (currentState) => currentState.rocketLauncher,
+                nextText: 9
+            },
+            {
+                text: 'Turn on your body shield',
+                requiredState: (currentState) => currentState.bodyShield,
+                nextText: 10
+            },
+            {
+                text: 'Stun it with your pistol',
+                requiredState: (currentState) => currentState.stunPistol,
+                nextText: 11
+            }
+        ]
+    },
 
 ]
 
