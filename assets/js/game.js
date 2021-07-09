@@ -179,7 +179,11 @@ const textNodes = [{
             nextText: -1
         }]
     },
-    {}
+    {
+        id: 11,
+        image: ''
+    }
+
 
 
 ]
