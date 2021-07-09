@@ -184,7 +184,7 @@ const textNodes = [{
         image: 'assets/images/ship_bridge.jpg',
         text: 'You shoot at the robot & it collapses. You are able to reset its protocols & it guides you around the ship. Gradually your memory comes back as the cryo-sleep fogginess wears off. You set off on your mission & look forward to new adventures',
         options: [{
-            text: 'Congratulations. Play again.'
+            text: 'Congratulations. Play again.',
             nextText: -1
         }]
     }
