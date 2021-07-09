@@ -85,7 +85,7 @@ const textNodes = [{
     {
         id: 3,
         image: 'assets/images/sci_fi_staircase.jpg',
-        text: 'You exit the hallway & climb a large staircase. At the top are 3 doors. One a plain red door, one a large door marked "Exit" & the last is  marked ""',
+        text: 'You exit the hallway & climb a large staircase. At the top are 3 doors. One a plain red door, one a large door marked "Exit" & the last is  marked "Galley/Dining"',
         options: [{
                 text: 'Open the red door',
                 nextText: 4
