@@ -121,11 +121,16 @@ const textNodes = [{
     {
         id: 6,
         image: 'assets/images/minimal_kitchen.jpg',
-        text: 'You enter the Galley & make your way to the cabinets. You find a box marked rations & consume one of the high nutrient bars inside. Strangely, you feel immediately rejuvinated. There must have been an extra ingredient in that bar. You decide to return to the red door & see what lies behind it',
+        text: 'You enter the Galley & make your way to the cabinets. You find a box marked rations & consume one of the high nutrient bars inside. Strangely, you feel immediately rejuvinated. There must have been an extra ingredient in that bar. You decide to return to the hallway',
         options: [{
-            text: 'Open the red door',
-            nextText: 7
-        }]
+                text: 'Open the Red Door',
+                nextText: 7
+            },
+            {
+                text: 'Open the Exit',
+                nextText: 5
+            }
+        ]
     },
     {
         id: 7,
