@@ -22,6 +22,12 @@ body {
     font-size: 1.4rem;
 }
 
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    color: royalblue;
+}
+
 .container {
     width: 800px;
     max-width: 80%;
