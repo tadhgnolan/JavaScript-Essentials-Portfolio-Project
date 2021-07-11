@@ -6,15 +6,19 @@ let state = {};
 
 function startGame() {
     state = {};
-    showTextNode(15);
+    showTextNode(1);
 }
 
 function showTextNode(textNodeIndex) {
     let textNode;
     try {
         textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
+        if (typeof textNode === 'undefined') {
+            throw 'textNode not found'
+        }
     } catch (error) {
-        textNode = textNodes.find(ERROR_PAGE_ID);
+        textNode = textNodes.find(textNode => textNode.id === ERROR_PAGE_ID);
+
     }
 
     textElement.innerText = textNode.text;
@@ -206,7 +210,7 @@ const textNodes = [{
         text: 'We seem to be experiencing technical difficulties.',
         options: [{
             text: 'Please try again.',
-            nextText: -1
+            nextText: 1
         }]
     }
 
