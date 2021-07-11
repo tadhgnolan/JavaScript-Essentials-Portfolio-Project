@@ -1,43 +1,43 @@
-const textElement = document.getElementById('text')
-const optionButtonsElement = document.getElementById('option-buttons')
+const textElement = document.getElementById('text');
+const optionButtonsElement = document.getElementById('option-buttons');
 
-let state = {}
+let state = {};
 
 function startGame() {
-    state = {}
-    showTextNode(1)
+    state = {};
+    showTextNode(1);
 }
 
 function showTextNode(textNodeIndex) {
-    const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
-    textElement.innerText = textNode.text
-    document.getElementById("tile-img").src = textNode.image
+    const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
+    textElement.innerText = textNode.text;
+    document.getElementById("tile-img").src = textNode.image;
     while (optionButtonsElement.firstChild) {
-        optionButtonsElement.removeChild(optionButtonsElement.firstChild)
+        optionButtonsElement.removeChild(optionButtonsElement.firstChild);
     }
 
     textNode.options.forEach(option => {
         if (showOption(option)) {
-            const button = document.createElement('button')
-            button.innerText = option.text
-            button.classList.add('btn')
-            button.addEventListener('click', () => selectOption(option))
-            optionButtonsElement.appendChild(button)
+            const button = document.createElement('button');
+            button.innerText = option.text;
+            button.classList.add('btn');
+            button.addEventListener('click', () => selectOption(option));
+            optionButtonsElement.appendChild(button);
         }
-    })
+    });
 }
 
 function showOption(option) {
-    return option.requiredState == null || option.requiredState(state)
+    return option.requiredState == null || option.requiredState(state);
 }
 
 function selectOption(option) {
-    const nextTextNodeId = option.nextText
+    const nextTextNodeId = option.nextText;
     if (nextTextNodeId <= 0) {
-        return startGame()
+        return startGame();
     }
-    state = Object.assign(state, option.setState)
-    showTextNode(nextTextNodeId)
+    state = Object.assign(state, option.setState);
+    showTextNode(nextTextNodeId);
 }
 
 const textNodes = [{
@@ -196,6 +196,6 @@ const textNodes = [{
 
 
 
-]
+];
 
-startGame()
+startGame();
