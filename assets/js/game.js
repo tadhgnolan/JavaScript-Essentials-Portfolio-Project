@@ -1,21 +1,22 @@
 const textElement = document.getElementById('text');
 const optionButtonsElement = document.getElementById('option-buttons');
+const ERROR_PAGE_ID = 12;
 
 let state = {};
 
 function startGame() {
     state = {};
-    showTextNode(1);
+    showTextNode(15);
 }
 
 function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
     textElement.innerText = textNode.text;
-    const ERROR_PAGE_ID = 12;
+
     try {
-        const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
+        const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
     } catch (error) {
-        const textNode = textNodes.find(ERROR_PAGE_ID)
+        const textNode = textNodes.find(ERROR_PAGE_ID);
     }
     document.getElementById("tile-img").src = textNode.image;
     while (optionButtonsElement.firstChild) {
