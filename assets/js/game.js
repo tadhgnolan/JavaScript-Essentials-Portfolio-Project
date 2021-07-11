@@ -10,14 +10,14 @@ function startGame() {
 }
 
 function showTextNode(textNodeIndex) {
-    const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
-    textElement.innerText = textNode.text;
-
+    let textNode;
     try {
-        const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
+        textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
     } catch (error) {
-        const textNode = textNodes.find(ERROR_PAGE_ID);
+        textNode = textNodes.find(ERROR_PAGE_ID);
     }
+
+    textElement.innerText = textNode.text;
     document.getElementById("tile-img").src = textNode.image;
     while (optionButtonsElement.firstChild) {
         optionButtonsElement.removeChild(optionButtonsElement.firstChild);
