@@ -11,6 +11,12 @@ function startGame() {
 function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
     textElement.innerText = textNode.text;
+    const ERROR_PAGE_ID = 12;
+    try {
+        const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
+    } catch (error) {
+        const textNode = textNodes.find(ERROR_PAGE_ID)
+    }
     document.getElementById("tile-img").src = textNode.image;
     while (optionButtonsElement.firstChild) {
         optionButtonsElement.removeChild(optionButtonsElement.firstChild);
@@ -190,6 +196,15 @@ const textNodes = [{
         text: 'You shoot at the robot & it collapses. You are able to reset its protocols & it guides you around the ship. Gradually your memory comes back as the cryo-sleep fogginess wears off. You set off on your mission & look forward to new adventures',
         options: [{
             text: 'Congratulations. Play again.',
+            nextText: -1
+        }]
+    },
+    {
+        id: 12,
+        image: 'assets/images/fire.jpeg',
+        text: 'We seem to be experiencing technical difficulties.',
+        options: [{
+            text: 'Please try again.',
             nextText: -1
         }]
     }
