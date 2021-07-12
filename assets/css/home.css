@@ -59,7 +59,7 @@ h2 {
 }
 
 #hero-outer {
-    height: 800px;
+    height: 600px;
     width: 100%;
     overflow: hidden;
 
@@ -67,7 +67,7 @@ h2 {
 }
 
 #hero-image {
-    height: 800px;
+    height: 600px;
     width: 100%;
     background: url(../images/galaxy.jpeg) no-repeat center center;
 
@@ -130,4 +130,32 @@ h2 {
 #center-about {
     width: 33%;
     margin: 0 auto;
+}
+
+hr {
+    border-top: 1px solid white;
+    width: 100%;
+    margin: 5px 0;
+}
+
+#left-about-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+}
+
+#right-about-heading {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+}
+
+#right-about-heading h2 {
+    text-align: right;
+}
+
+#right-about-heading p {
+    text-align: right;
 }
