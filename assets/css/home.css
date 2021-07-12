@@ -250,7 +250,8 @@ hr {
         margin: 0;
     }
 
-    #left-about. #right-about {
+    #left-about,
+    #right-about {
         width: 100%;
         float: left;
         padding: 0;
