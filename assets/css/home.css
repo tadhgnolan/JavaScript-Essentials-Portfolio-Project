@@ -344,3 +344,33 @@ hr {
         padding: 0 20px;
     }
 }
+
+#contact {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    border-top: 10rem;
+    border-bottom: 10rem;
+}
+
+#email {
+    text-align: center;
+    padding-top: 20rem;
+    color: white;
+}
+
+#email a:link {
+    color: white;
+}
+
+#email a:visited {
+    color: red;
+}
+
+#email a:hover {
+    color: hotpink;
+}
+
+#email a:active {
+    color: red;
+}
