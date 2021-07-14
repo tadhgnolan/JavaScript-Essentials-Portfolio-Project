@@ -3,7 +3,8 @@
 *,
 *::before,
 *::after {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     box-sizing: border-box;
 }
 
