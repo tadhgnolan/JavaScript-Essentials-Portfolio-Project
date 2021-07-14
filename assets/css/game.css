@@ -31,6 +31,7 @@ body {
     background-color: black;
     overflow: hidden;
     margin-bottom: 0.5rem;
+    border-radius: 15px;
 }
 
 /* Styling for links inside navigation bar */
@@ -66,7 +67,6 @@ body {
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
-
 }
 
 .active {
@@ -74,9 +74,9 @@ body {
 }
 
 .container {
-    width: 40vw;
+    width: 80vw;
     max-width: 100%;
-    height: 100vh;
+    height: auto;
     max-height: 100%;
     background-color: #333;
     padding-left: 10px;
@@ -110,14 +110,14 @@ body {
 }
 
 #tile {
-    width: 80vw;
+    width: 100vw;
     max-width: 100%;
-    height: auto;
+    height: 50vh;
     max-height: 100%;
 }
 
 #tile-img {
-    width: 50vw;
+    width: 20vw;
     max-width: 100%;
     height: auto;
     padding-top: 2%;
@@ -131,44 +131,409 @@ body {
     text-align: center;
 }
 
-@media screen and (max-width: 950px) {
+/* Standard desktop monitor */
+@media screen and (max-width: 1920px) {
+    * {
+        font-size: 1.4rem;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .container {
+        width: 80vw;
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    #tile {
+        width: 80vw;
+        height: auto;
+    }
+
+    #tile-img {
+        width: 20vw;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+
+    #text {
+        font-size: 1rem;
+    }
+
+
+    #img-container {
+        text-align: center;
+    }
+}
+
+/* Large laptop */
+@media screen and (max-width: 1440px) {
+    * {
+        font-size: 1.4rem;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .container {
+        width: 80vw;
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    #tile {
+        width: 80vw;
+        height: auto;
+    }
+
+    #tile-img {
+        width: 20vw;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+
+    #text {
+        font-size: 1rem;
+    }
+
+
+    #img-container {
+        text-align: center;
+    }
+}
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+    * {
+        font-size: 1.1rem;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .container {
+        width: 80vw;
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    #tile {
+        width: 80vw;
+        height: auto;
+    }
+
+    #tile-img {
+        width: 20vw;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+
+    #text {
+        font-size: 1rem;
+    }
+
+
+    #img-container {
+        text-align: center;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 1.4rem;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .container {
+        width: 100vw;
+        height: auto;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    #tile {
+        width: 80vw;
+        height: auto;
+    }
+
+    #tile-img {
+        width: 50vw;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+
+    #text {
+        font-size: 1rem;
+    }
+
+
+    #img-container {
+        text-align: center;
+    }
+}
+
+/* Large mobile device */
+@media screen and (max-width: 425px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .container {
+        width: 100vw;
+        height: auto;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    #tile {
+        height: 50vh;
+    }
+
+    #tile-img {
+        width: 50vw;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+
+    #text {
+        font-size: 1rem;
+    }
+
+
+    #img-container {
+        text-align: center;
+    }
+}
+
+/* Pixel 2 & Pixel 2XL */
+@media screen and (max-width: 411px) {
+    * {
+        font-size: 1.2rem;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .container {
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    #tile {
+        height: 22vh;
+    }
+
+    #tile-img {
+        width: 60vw;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+
+    #text {
+        font-size: 1rem;
+    }
+
+    #img-container {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 414px) and (max-height: 736px) {
+
     .container {
         width: 90vw;
         height: 90vh;
     }
 
     #tile {
-        width: 100vw;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
+        height: 22vh;
     }
 
     #tile-img {
-        width: 100vw;
-        max-width: 100%;
+        width: 50vw;
         height: auto;
+        max-width: 100%;
         max-height: 100%;
-    }
 
-    #text {
-        font-size: 1.1rem;
     }
 }
 
-@media screen and (max-width: 1440px) {}
+/* Medium mobile device */
+@media screen and (max-width: 375px) {
+    * {
+        font-size: 1rem;
+    }
 
-@media screen and (max-width: 1440px) {}
+    .topnav.responsive {
+        position: relative;
+    }
 
-@media screen and (max-width: 1024px) {}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 
-@media screen and (max-width: 768px) {}
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 
-@media screen and (max-width: 425px) {}
+    .container {
+        width: 100vw;
+        height: auto;
+    }
 
-@media screen and (max-width: 375px) {}
+    .btn {
+        font-size: 1rem;
+    }
 
+    #tile {
+        height: 40vh;
+    }
+
+    #tile-img {
+        width: 50vw;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+
+    #text {
+        font-size: 1rem;
+    }
+
+
+    #img-container {
+        text-align: center;
+    }
+}
+
+
+/* Small mobile device */
 @media screen and (max-width: 320px) {
+    * {
+        font-size: 1rem;
+    }
+
     .topnav.responsive {
         position: relative;
     }
