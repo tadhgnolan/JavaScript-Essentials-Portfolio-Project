@@ -30,9 +30,8 @@ body {
 /* Black background color for top navigation */
 .topnav {
     background-color: black;
-    margin-top: 0.75rem;
-    padding-left: 20rem;
     overflow: hidden;
+    margin-bottom: 0.5rem;
 }
 
 /* Styling for links inside navigation bar */
