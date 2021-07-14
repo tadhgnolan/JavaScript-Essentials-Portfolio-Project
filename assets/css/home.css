@@ -48,14 +48,15 @@ h2 {
 
 /* Change color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: pink;
     color: #333;
+    border-bottom: 1px solid hotpink;
     border-radius: 15px;
 }
 
 /* Add active class to highlight current page */
 .topnav a.active {
-    background-color: white;
+    background-color: hotpink;
     color: black;
     border-radius: 15px;
 }
@@ -84,7 +85,7 @@ h2 {
 
 
 .active {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid pink;
 }
 
 #hero-outer {
@@ -230,12 +231,12 @@ hr {
     background-color: white;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 9px pink;
 }
 
 #play-button:hover {
-    background-color: rgba(11, 58, 240, .4);
-    color: white;
+    background-color: hotpink;
+    color: black;
 }
 
 #play-button:active {

@@ -17,7 +17,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: 100vh;
     max-height: 100%;
     background-color: #333;
@@ -47,14 +46,14 @@ body {
 
 /* Change color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: pink;
     color: #333;
     border-radius: 15px;
 }
 
 /* Add active class to highlight current page */
 .topnav a.active {
-    background-color: white;
+    background-color: hotpink;
     color: black;
     border-radius: 15px;
 }
@@ -64,24 +63,11 @@ body {
     display: none;
 }
 
-#logo {
-    margin-left: 10rem;
-    float: left;
-    font-size: 280%;
-}
-
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
 
 }
-
-#logo {
-    line-height: 75px;
-    margin-left: 30px;
-}
-
-
 
 .active {
     border-bottom: 1px solid white;
@@ -96,11 +82,11 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 5vh;
-    padding-top: 2vh;
+    padding-top: 10vh;
     margin-bottom: 20vh;
     margin-top: 13vh;
     border-radius: 5px;
-    box-shadow: 0 0 10px 2px;
+    box-shadow: 0 0 0.625rem 0.125rem;
 }
 
 .btn-grid {
@@ -113,7 +99,7 @@ body {
 .btn {
     background-color: rgba(0, 0, 0, 1);
     border: 1px solid #333;
-    padding: 5px 20px;
+    padding: 0.3125rem 1.25rem;
     color: rgba(255, 255, 255, 1);
     outline: none;
     font-size: 1.4rem;
@@ -126,13 +112,14 @@ body {
 #tile {
     width: 80vw;
     max-width: 100%;
-    height: 60vh;
+    height: auto;
     max-height: 100%;
 }
 
 #tile-img {
-    width: 80vw;
+    width: 50vw;
     max-width: 100%;
+    height: auto;
     padding-top: 2%;
 }
 
@@ -152,7 +139,7 @@ body {
 
     #tile {
         width: 100vw;
-        height: 45vh;
+        height: auto;
         max-width: 100%;
         max-height: 100%;
     }
@@ -160,7 +147,7 @@ body {
     #tile-img {
         width: 100vw;
         max-width: 100%;
-        height: 100vh;
+        height: auto;
         max-height: 100%;
     }
 
@@ -171,6 +158,11 @@ body {
 
 /* Responsive menu icon for smaller screens */
 @media screen and (max-width: 600px) {
+    #tile-img {
+        width: 50vw;
+        height: auto;
+    }
+
     .topnav.responsive {
         position: relative;
     }
