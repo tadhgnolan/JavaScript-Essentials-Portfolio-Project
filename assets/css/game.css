@@ -131,6 +131,8 @@ body {
     text-align: center;
 }
 
+
+
 /* Standard desktop monitor */
 @media screen and (max-width: 1920px) {
     * {
@@ -231,6 +233,60 @@ body {
         max-width: 100%;
         max-height: 100%;
 
+    }
+
+    #text {
+        font-size: 1rem;
+    }
+
+
+    #img-container {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1080) and (max-height: 675) {
+    * {
+        font-size: 1.1rem;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .container {
+        width: 80vw;
+        max-width: 100%;
+        height: 40vh;
+        max-height: 100%;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    #tile {
+        width: 80vw;
+        height: 40vh;
+    }
+
+    #tile-img {
+        width: 20vw;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     #text {
