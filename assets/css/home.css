@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    overflow-x: hidden;
 }
 
 html {
@@ -29,6 +30,8 @@ h2 {
 /* Black background color for top navigation */
 .topnav {
     background-color: black;
+    margin-top: 0.75rem;
+    padding-left: 20rem;
     overflow: hidden;
 }
 
@@ -63,6 +66,7 @@ h2 {
 }
 
 #logo {
+    margin-left: 10rem;
     float: left;
     font-size: 280%;
 }
@@ -265,6 +269,18 @@ hr {
 
 /* For larger to medium screens size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
+    body {
+        overflow: none;
+    }
+
+    .topnav {
+        padding-left: 1rem;
+    }
+
+    #logo {
+        font-size: 150%;
+    }
+
     #about {
         width: 65%;
         height: 1200px;
