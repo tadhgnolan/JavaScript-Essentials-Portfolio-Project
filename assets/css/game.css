@@ -3,7 +3,7 @@
 *,
 *::before,
 *::after {
-    overflow-x: hidden;
+    overflow: hidden;
     box-sizing: border-box;
 }
 
@@ -111,20 +111,23 @@ body {
 
 #tile {
     width: 100vw;
-    max-width: 100%;
+    max-width: 100% !important;
     height: 50vh;
-    max-height: 100%;
+    max-height: 100% !important
 }
 
 #tile-img {
     width: 20vw;
-    max-width: 100%;
+    max-width: 100% !important;
     height: auto;
+    max-height: 100% !important;
     padding-top: 2%;
+    overflow: hidden !important;
 }
 
 #text {
     color: white;
+    max-height: 100% !important;
 }
 
 #img-container {
@@ -173,7 +176,7 @@ body {
 
     #tile-img {
         width: 20vw;
-        height: auto;
+        height: 40;
         max-width: 100%;
         max-height: 100%;
 
