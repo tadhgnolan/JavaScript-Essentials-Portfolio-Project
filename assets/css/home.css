@@ -140,6 +140,8 @@ h2 {
 
 .grid-container {
     display: grid;
+    height: 25rem;
+    align-content: space-evenly;
 }
 
 
@@ -288,3 +290,4 @@ hr {
             display: none;
         }
     }
+}
