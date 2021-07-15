@@ -71,11 +71,8 @@ body {
     border-bottom: 1px solid grey;
 }
 
-.grid-container {
-    display: grid;
+.container {
     height: 100vh;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
-    grid-template-rows: 17vh 20vh 20vh 20vh 20vh;
     background-color: #333;
     box-shadow: 0 0 0.625rem 0.125rem;
 }
@@ -107,14 +104,14 @@ body {
 }
 
 #img-container {
-    grid-column: 2 / span 2;
-    grid-row: 3 / span 4;
+    width: auto;
+    height: 30vh;
     text-align: center;
 }
 
 #tile-img {
-    width: 30%;
-    height: auto;
+    width: auto;
+    height: 30vh;
 }
 
 #option-buttons {
