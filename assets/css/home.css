@@ -54,15 +54,15 @@ hr {
 
 /* Change color of links on hover */
 .topnav a:hover {
-    background-color: pink;
+    background-color: white;
     color: #333;
-    border-bottom: 1px solid hotpink;
+    border-bottom: 1px solid grey;
     border-radius: 15px;
 }
 
 /* Add active class to highlight current page */
 .topnav a.active {
-    background-color: hotpink;
+    background-color: white;
     color: black;
     border-radius: 15px;
 }
@@ -95,8 +95,9 @@ hr {
 }
 
 #hero-outer {
-    height: 600px;
+    height: 80vh;
     width: 100%;
+    max-width: 100%;
     overflow: hidden;
     position: relative
 }
@@ -104,6 +105,7 @@ hr {
 #hero-image {
     height: 80vh;
     width: 100%;
+    max-width: 100%;
     background: url(../images/galaxy.jpeg) no-repeat center center;
 
     animation-name: hero-zoom;
@@ -122,22 +124,25 @@ hr {
 }
 
 #start-game {
-    font-size: 130%;
+    font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    text-align: center;
+    text-align: left;
 
-    width: 300px;
-    height: 150px;
+    width: 30vw;
+    height: 15vh;
 
-    padding-top: 40px;
-    padding-left: 10px;
+    padding-top: 5vh;
+    padding-left: 4vw;
+    margin-left: 1vw;
+    margin-right: 5vw;
 
     background-color: rgba(11, 58, 240, .4);
     color: black;
-    bottom: 30px;
-    right: 150px;
+    bottom: 20vh;
+    right: 1vw;
+
 
     position: absolute;
 
@@ -177,10 +182,6 @@ hr {
     grid-row: 4/ span 2;
 }
 
-
-
-
-
 #play-button {
 
     padding: 15px 25px;
@@ -192,12 +193,12 @@ hr {
     background-color: white;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px pink;
+    box-shadow: 0 9px grey;
 }
 
 #play-button:hover {
-    background-color: hotpink;
-    color: black;
+    background-color: rgba(11, 58, 240, .4);
+    color: white;
 }
 
 #play-button:active {
@@ -313,6 +314,16 @@ hr {
             height: 180vh;
             grid-template-columns: 5vw 90vw 5vw;
             grid-template-rows: 15vh 15vh 10vh 15vh 15vh 10vh 15vh 5vh 15vh 15vh 2vh;
+        }
+
+        #start-game {
+            width: 90vw;
+            height: 15vh;
+            padding-top: 5vh;
+            padding-left: 10vw;
+            padding-right: 1vw;
+            margin-left: 1vw;
+            margin-right: 1vw;
         }
 
         #welcome {
