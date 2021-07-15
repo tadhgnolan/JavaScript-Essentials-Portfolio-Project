@@ -110,13 +110,6 @@ body {
     border-color: black;
 }
 
-#tile {
-    width: 100vw;
-    max-width: 100% !important;
-    height: 50vh;
-    max-height: 100% !important
-}
-
 #tile-img {
     width: 20vw;
     max-width: 100% !important;
