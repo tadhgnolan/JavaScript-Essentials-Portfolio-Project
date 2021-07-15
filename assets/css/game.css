@@ -28,6 +28,8 @@ body {
 
 /* Black background color for top navigation */
 .topnav {
+    grid-column: 2 / span 6;
+    grid-row: 2;
     background-color: black;
     overflow: hidden;
     margin-bottom: 0.5rem;
@@ -74,24 +76,17 @@ body {
     border-bottom: 1px solid grey;
 }
 
-.container {
-    width: 80vw;
-    max-width: 100%;
-    height: auto;
-    max-height: 100%;
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 5vw 15vw 20vw 20vw 20vw 15vw 5vw;
+    grid-template-rows: 5vw 10vw 10vw 25vw 25vw 20vw 5vw;
     background-color: #333;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5vh;
-    padding-top: 10vh;
-    margin-bottom: 20vh;
-    margin-top: 13vh;
     border-radius: 5px;
     box-shadow: 0 0 0.625rem 0.125rem;
 }
 
 .btn-grid {
-    display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 1vh;
     margin-top: .5vh;
@@ -111,18 +106,10 @@ body {
 }
 
 #text {
+    grid-column: 1 / span;
     color: white;
-    max-height: 100% !important;
 }
 
-#tile-img {
-    width: 20vw;
-    max-width: 100% !important;
-    height: auto;
-    max-height: 100% !important;
-    padding-top: 2%;
-    overflow: hidden !important;
-}
 
 #img-container {
     text-align: center;
