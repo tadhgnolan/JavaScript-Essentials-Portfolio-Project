@@ -27,6 +27,12 @@ h2 {
     color: white;
 }
 
+hr {
+    border-top: 1px solid white;
+    width: 100%;
+    margin: 5px 0;
+}
+
 /* Black background color for top navigation */
 .topnav {
     background-color: black;
@@ -140,20 +146,43 @@ h2 {
 
 .grid-container {
     display: grid;
-    height: 25rem;
-    align-content: space-evenly;
+    height: 50rem;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-template-rows: 10vh 10vh 10vh 10vh;
+}
+
+#welcome {
+    grid-column: 1 / span 5;
+    grid-row: 2 / span 1;
+    text-align: center;
+}
+
+#left-about-heading {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+}
+
+#left-about-text {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 2;
+}
+
+#right-about-heading {
+    grid-column: 4 / span 2;
+    grid-row: 3 / span 2;
+}
+
+#right-about-text {
+    grid-column: 4 / span 1;
+    grid-row: 4/ span 2;
 }
 
 
-hr {
-    border-top: 1px solid white;
-    width: 100%;
-    margin: 5px 0;
-}
 
 
 
 #play-button {
+
     padding: 15px 25px;
     font-size: 1.5rem;
     text-align: center;
@@ -178,9 +207,13 @@ hr {
 }
 
 #play-button-container {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
     padding-top: 2rem;
     text-align: center;
 }
+
+
 
 .social-networks {
     text-align: center;
@@ -274,8 +307,43 @@ hr {
     }
 
     @media screen and (max-width: 420px) {
-        body {
-            overflow: none;
+
+        .grid-container {
+            display: grid;
+            height: 180vh;
+            grid-template-columns: 5vw 90vw 5vw;
+            grid-template-rows: 15vh 15vh 10vh 15vh 15vh 10vh 15vh 5vh 15vh 15vh 2vh;
+        }
+
+        #welcome {
+            grid-column: 2 / span 1;
+            grid-row: 2 / span 1;
+            text-align: center;
+        }
+
+        #left-about-heading {
+            grid-column: 2 / span 1;
+            grid-row: 3 / span 1;
+        }
+
+        #left-about-text {
+            grid-column: 2 / span 1;
+            grid-row: 4 / span 1;
+        }
+
+        #right-about-heading {
+            grid-column: 2 / span 1;
+            grid-row: 6 / span 1;
+        }
+
+        #right-about-text {
+            grid-column: 2 / span 1;
+            grid-row: 7/ span 2;
+        }
+
+        #play-button-container {
+            grid-column: 2 / span 1;
+            grid-row: 10 / span 1;
         }
 
         .topnav {
