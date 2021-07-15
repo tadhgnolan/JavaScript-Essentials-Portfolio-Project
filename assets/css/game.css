@@ -88,6 +88,7 @@ body {
 
 .btn-grid {
     grid-template-columns: repeat(2, auto);
+    grid-template-rows: 6 / span 7;
     gap: 1vh;
     margin-top: .5vh;
 }
@@ -99,6 +100,7 @@ body {
     color: rgba(255, 255, 255, 1);
     outline: none;
     font-size: 1.4rem;
+    justify-items: center;
 }
 
 .btn-hover {
@@ -106,11 +108,34 @@ body {
 }
 
 #text {
-    grid-column: 1 / span;
+    grid-column: 2 / span 5;
+    grid-row: 3;
     color: white;
 }
 
 
 #img-container {
+    grid-column: auto;
+    grid-row: auto;
     text-align: center;
+}
+
+#tile-img {
+    width: auto;
+    max-width: 80vw;
+    height: 65vh;
+    max-height: 65vh;
+}
+
+/* Mobile phones */
+@media screen and (max-width: 420) {
+    #img-container {
+        width: 20%;
+        height: 20%;
+    }
+
+    #tile-img {
+        grid-column: auto;
+        grid-row: auto;
+    }
 }
