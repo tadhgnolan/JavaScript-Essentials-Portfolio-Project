@@ -1,3 +1,4 @@
+// Code from this tutorial was used and modified - https://github.com/WebDevSimplified/JavaScript-Text-Adventure
 const textElement = document.getElementById('text');
 const optionButtonsElement = document.getElementById('option-buttons');
 const ERROR_PAGE_ID = 12;
