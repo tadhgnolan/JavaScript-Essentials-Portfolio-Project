@@ -267,7 +267,39 @@ hr {
 
 @media only screen and (orientation: landscape) {
     * {
-        font-size: 0.875rem;
+        font-size: 0.875rem !important;
+    }
+
+    .grid-container {
+        display: grid;
+        height: 300vh;
+        grid-template-columns: 5vw 90vw 5vw;
+        grid-template-rows: 25vh 25vh 25vh 25vh 25vh 25vh 25vh 25vh 25vh 25vh;
+    }
+
+    #welcome {
+        grid-column: 1 / span 5;
+        grid-row: 2;
+    }
+
+    #left-about-heading {
+        grid-column: 2 / span 2;
+        grid-row: 3;
+    }
+
+    #left-about-text {
+        grid-column: 2 / span 1;
+        grid-row: 4;
+    }
+
+    #right-about-heading {
+        grid-column: 4 / span 2;
+        grid-row: 5;
+    }
+
+    #right-about-text {
+        grid-column: 4 / span 1;
+        grid-row: 6;
     }
 }
 
